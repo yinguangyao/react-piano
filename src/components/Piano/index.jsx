@@ -61,7 +61,7 @@ export default function Header() {
       refs.current[name].style.background = `linear-gradient(-20deg, #3330fb, #000, #222)`
       let timer = setTimeout(() => {
         // console.log(this[name].getAttribute('data-type'))
-        refs.current[name].getAttribute('data-type') === 'white' ? refs.current[name].style.background = `linear-gradient(-30deg, #f8f8f8, #fff)` : this[name].style.background = `linear-gradient(-20deg, #222, #000, #222)`
+        refs.current[name].getAttribute('data-type') === 'white' ? refs.current[name].style.background = `linear-gradient(-30deg, #f8f8f8, #fff)` : refs.current[name].style.background = `linear-gradient(-20deg, #222, #000, #222)`
         // clearInterval(timer)
         clearTimeout(timer)
       }, 1000)
